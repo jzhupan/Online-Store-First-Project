@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Store</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      type="text/css"
+    />
+  </head>
+  <body>
     <div class="topnav">
-        <a>Pink Du</a>
-        <a class="active" href="#home">Home</a>
-        
-        <a href="#shop">
-            <img class="icon" 
-            src="./icons/store-solid.svg" 
-            alt="Store Icon"/>
-            Shop
-        </a>
-        <a href="#contact">Contact</a>
-        <a class="cart"></a>
+      <table>
+        <tr>
+          <th><a class="topnav-component logo">Pink Du</a></th>
+          <th>
+            <a class="topnav-component" href="#home">
+              <i class="fa-solid fa-house"></i>
+              Home</a
+            >
+          </th>
+          <th>
+            <a class="topnav-component" href="#shop">
+              <i class="fa fa-store"></i> Shop
+            </a>
+          </th>
+          <th>
+            <a class="topnav-component" href="#contact">
+              <i class="fa-solid fa-pencil"></i>
+              Contact</a
+            >
+          </th>
+          <th>
+            <a class="cart topnav-component">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </th>
+        </tr>
+      </table>
     </div>
-</body>
+  </body>
 </html>
