@@ -7,8 +7,19 @@
 a {
   text-decoration: none;
   color: inherit;
+  font-family: cursive;
 }
 
+h1 {
+  font-family: cursive;
+}
+
+.centered{
+  text-align: center;
+}
+p{
+  font-family:cursive;
+}
 .topnav {
   padding: 10px 0px 10px 0px;
   text-align: center;
