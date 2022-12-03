@@ -30,6 +30,12 @@ p{
 .topnav-component {
   padding: 0px 15px 0px 15px;
 }
+.zoomHover{
+  transition: transform .5s;
+}
+.zoomHover:hover {
+  transform: scale(1.5);
+}
 
 table {
   margin-left: auto;
@@ -40,3 +46,8 @@ table {
 th {
     border: 1px solid black;
 }
+
+.label{
+  padding-left: 16px;
+}
+

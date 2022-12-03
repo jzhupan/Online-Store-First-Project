@@ -35,10 +35,12 @@
             </a>
           </th>
           <th>
+            <div class="zoomHover">
             <a class="topnav-component" href="./contact.html">
               <i class="fa-solid fa-pencil"></i>
               Contact</a
             >
+          </div>
           </th>
           <th>
             <a class="cart topnav-component" href="./shoppingCart.html">
@@ -57,13 +59,21 @@
       <br />
       a message below!
     </p>
-    <table>
-      <tr>
-        <th>Your name</th>
-      </tr>
-      <tr>
-        <th>Your email</th>
-      </tr>
-    </table>
+<div class="container centered">
+    <form action="#">
+      <label class="label" for="firstName">Name*</label>
+      <input type="text" id="firstName" onblur="blurFunction(this)" name="firstname" placeholder="Enter your name here">
+      <label class="label" for="email">Email:</label>
+      <input type="text" id="email" onblur="blurFunction(this)" name="email" placeholder="Enter a valid email here">
+      <br>
+      <br>
+      <label for="subject">Message Board:</label>
+      <br>
+      <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Type your message here..."></textarea>
+      <br>
+      <button onclick="triggerAlert()">Submit</button>
+    </form>
+
+</div>
   </body>
 </html>
