@@ -17,6 +17,12 @@
       href="./images/general/favicon.png"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crushed&family=Poiret+One&family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="topnav">
@@ -35,12 +41,12 @@
             </a>
           </th>
           <th>
-            <div class="zoomHover">
-            <a class="topnav-component" href="./contact.html">
-              <i class="fa-solid fa-pencil"></i>
-              Contact</a
-            >
-          </div>
+            
+              <a class="topnav-component" href="./contact.html">
+                <i class="fa-solid fa-pencil"></i>
+                Contact</a
+              >
+            </div>
           </th>
           <th>
             <a class="cart topnav-component" href="./shoppingCart.html">
@@ -50,7 +56,7 @@
         </tr>
       </table>
     </div>
-    <h1 class="centered">Contact Page</h1>
+    <h1 class="centered zoomHover">Contact Page</h1>
     <p class="centered">
       Send me an email at
       <br />
@@ -59,21 +65,38 @@
       <br />
       a message below!
     </p>
-<div class="container centered">
-    <form action="#">
-      <label class="label" for="firstName">Name*</label>
-      <input type="text" id="firstName" onblur="blurFunction(this)" name="firstname" placeholder="Enter your name here">
-      <label class="label" for="email">Email:</label>
-      <input type="text" id="email" onblur="blurFunction(this)" name="email" placeholder="Enter a valid email here">
-      <br>
-      <br>
-      <label for="subject">Message Board:</label>
-      <br>
-      <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Type your message here..."></textarea>
-      <br>
-      <button onclick="triggerAlert()">Submit</button>
-    </form>
-
-</div>
+    <div class="container centered">
+      <form action="#">
+        <label class="label" for="firstName">Name*</label>
+        <input
+          type="text"
+          id="firstName"
+          onblur="blurFunction(this)"
+          name="firstname"
+          placeholder="Enter your name here"
+        />
+        <label class="label" for="email">Email:</label>
+        <input
+          type="text"
+          id="email"
+          onblur="blurFunction(this)"
+          name="email"
+          placeholder="Enter a valid email here"
+        />
+        <br />
+        <br />
+        <label for="subject">Message Board:</label>
+        <br />
+        <textarea
+          name="subject"
+          id="subject"
+          cols="30"
+          rows="10"
+          placeholder="Type your message here..."
+        ></textarea>
+        <br />
+        <button onclick="triggerAlert()">Submit</button>
+      </form>
+    </div>
   </body>
 </html>

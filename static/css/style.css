@@ -1,37 +1,41 @@
 .icon {
   width: 24px;
   height: 24px;
-  color: rgb(254, 117, 170);
+  color: rgb(237, 65, 131);
 }
 
 a {
   text-decoration: none;
   color: inherit;
-  font-family: cursive;
+  font-weight: lighter;
+  font-family: "Crushed", cursive;
 }
 
 h1 {
-  font-family: cursive;
+  font-weight: lighter;
+  font-family: "Crushed", cursive;
+  /* font-family: "Poiret One", cursive; */
+  /* font-family: "Unica One", cursive; */
 }
 
-.centered{
+.centered {
   text-align: center;
 }
-p{
-  font-family:cursive;
+p {
+  font-family: cursive;
 }
 .topnav {
   padding: 10px 0px 10px 0px;
   text-align: center;
   font-size: 24px;
-  color: rgb(254, 117, 170);
+  color: rgb(237, 65, 131);
 }
 
 .topnav-component {
   padding: 0px 15px 0px 15px;
 }
-.zoomHover{
-  transition: transform .5s;
+.zoomHover {
+  transition: transform 0.5s;
 }
 .zoomHover:hover {
   transform: scale(1.5);
@@ -44,10 +48,26 @@ table {
 }
 
 th {
-    border: 1px solid black;
+  /* border: 1px solid black; */
+  border-right: 10px;
 }
 
-.label{
+.label {
   padding-left: 16px;
 }
 
+.gridContainer {
+  display: grid;
+  grid-template-columns: 230px 230px 230px 230px;
+  grid-template-rows: 300px 300px 300px 300px;
+  gap: 100px;
+  justify-content: space-evenly;
+}
+
+.gridBox {
+  background-color: rgb(116, 190, 255);
+  text-align: center;
+  font-size: 24px;
+  margin: 2%;
+  display: grid;
+}
