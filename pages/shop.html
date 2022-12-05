@@ -51,12 +51,29 @@
               <i class="fa-solid fa-cart-shopping"></i>
             </a>
           </th>
+          <p id="cartDemo"></p>
         </tr>
       </table>
     </div>
     <h1 class="centered zoomHover">Shop Page</h1>
-    <div class="gridContainer centered">
-      <div class="gridBox"></div>
+    <div class="gridContainer">
+      <div>
+        <div class="gridBox">
+          <img
+            class="artPrint"
+            src="../images/Lime Popsickle (2).jpg"
+            alt="Popsickle"
+          />
+        </div>
+        <div class="printName centered">Lime Popsickle</div>
+        <div class="printPrice centered">$8.00 USD</div>
+        <div class="quantity" id="quantityPrint1">
+          <button class="minusButton" onclick="changeQuantity(this)">-</button>
+          <div class="value centered"></div>
+          <button class="addButton" onclick="changeQuantity(this)">+</button>
+        </div>
+        <button class="zoomHover" onclick="addToCart()">Add to Cart</button>
+      </div>
       <div class="gridBox"></div>
       <div class="gridBox"></div>
       <div class="gridBox"></div>

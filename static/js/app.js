@@ -31,3 +31,19 @@ function blurFunction(inputText) {
 }
 
 // inputText.style.background = "rgba(255,0,0.9,0.5)";
+
+// function addToCart() {
+//   document.getElementById("cartDemo").innerHTML = function () {
+//     addToCart();
+//   };
+//   function addToCart() {
+//     document.getElementById("cartDemo").innerHTML = "Added item to cart.";
+//   }
+// }
+
+function changeQuantity(sourceElement) {
+  let parentElement = sourceElement.parentElement;
+  let valueDiv = parentElement.querySelector(".value");
+  console.log(sourceElement.innerHTML);
+  let button = sourceElement.innerHTML;
+}

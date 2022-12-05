@@ -17,6 +17,12 @@
       href="./images/general/favicon.png"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crushed&family=Poiret+One&family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="topnav">
@@ -45,9 +51,14 @@
               <i class="fa-solid fa-cart-shopping"></i>
             </a>
           </th>
+          <th>
+            <button class="cartButton" onclick="addToCart()">
+              Add to Cart
+            </button>
+          </th>
         </tr>
       </table>
     </div>
-    <h1>Your cart is empty!</h1>
+    <h1 class="centered zoomHover">Your cart is empty!</h1>
   </body>
 </html>
