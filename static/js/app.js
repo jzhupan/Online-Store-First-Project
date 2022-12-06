@@ -42,8 +42,19 @@ function blurFunction(inputText) {
 // }
 
 function changeQuantity(sourceElement) {
-  let parentElement = sourceElement.parentElement;
-  let valueDiv = parentElement.querySelector(".value");
-  console.log(sourceElement.innerHTML);
-  let button = sourceElement.innerHTML;
+  let parentElement = sourceElement.parentElement; //declaring parentElement variable to get parent element.
+  let valueDiv = parentElement.querySelector(".value"); //declaring valueDiv = telling computer
+  //to find the class value.
+  // valueDiv.innerHTML = "1";
+  // console.log(sourceElement.innerHTML); //showing parent element.
+  let buttonSign = sourceElement.innerHTML; //showing which button user is clicking +/-
+  let quantity = valueDiv.innerHTML;
+  quantity = parseInt(quantity);
+  if (buttonSign === "+") {
+    quantity++;
+    valueDiv.innerHTML = quantity;
+  } else if (buttonSign === "-" && quantity > 1) {
+    quantity--;
+    valueDiv.innerHTML = quantity;
+  }
 }
