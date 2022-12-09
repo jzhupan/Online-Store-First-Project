@@ -1,5 +1,5 @@
 function triggerAlert() {
-  alert("Your form has been submitted, Pink Du will reach out ASAP!");
+  alert("Your form has been submitted, Thank you!");
 }
 
 function blurFunction(inputText) {

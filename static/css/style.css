@@ -91,3 +91,67 @@ button {
   flex-direction: row;
   justify-content: center;
 }
+
+/* .gallery {
+  object-fit: contain;
+  margin: 5px;
+  border: 1px solid rgb(255, 158, 180);
+  float: left;
+  width: 180px;
+}
+
+.gallery:hover {
+  border: 1px solid rgb(74, 146, 255);
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.description {
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-weight: lighter;
+  font-family: "Crushed", cursive;
+} */
+
+#carousel {
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#carousel .slide {
+  display: inline-block;
+}
+
+.slide img {
+  /* margin: 5px; */
+  /* border: 1px solid rgb(255, 108, 155); */
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* .slide:hover {
+  border: 1px solid rgb(84, 113, 255);
+} */
+
+.transparentHover:hover {
+  background-color: rgba(169, 219, 255, 0.603);
+}
+
+/* #carousel.transparentHover {
+  background-color: rgb(255, 213, 98);
+} */
+
+.hoverText {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+  color: rgb(255, 213, 98);
+}
