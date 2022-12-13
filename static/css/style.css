@@ -5,7 +5,7 @@
 }
 
 body {
-  background: rgb(255, 242, 247);
+  background: rgb(255, 246, 234);
 }
 
 .icon {
@@ -21,7 +21,8 @@ a {
   font-family: "Crushed", cursive;
 }
 
-h1 {
+h1,
+h2 {
   font-weight: lighter;
   font-family: "Crushed", cursive;
   /* font-family: "Poiret One", cursive; */
@@ -102,57 +103,24 @@ button {
   justify-content: center;
 }
 
-#carousel {
-  width: 100%;
-  overflow: auto;
-  white-space: nowrap;
-  position: absolute;
-  margin-left: 5px;
+.column {
+  float: left;
+  width: 500;
+  height: 700px;
+  padding-left: 250px;
 }
 
-#carousel .slide {
-  display: inline-block;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.slide img {
-  width: 300px;
-  height: 400px;
-  object-fit: cover;
+.coverArt {
+  width: calc(1080px / 3);
+  height: calc(1920px / 3);
 }
 
-/* .content { 
-  margin-left: 40%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 150px;
-  text-align: center;
-
-} */
-
-.container:hover .overlay {
-  opacity: 1;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: fit-content;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #008cba;
-}
-.textOnHover {
-  margin-left: 40%;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  color: white;
-  font-size: 150px;
-  text-align: center;
+.linkColor {
+  color: rgb(177, 81, 255);
 }
