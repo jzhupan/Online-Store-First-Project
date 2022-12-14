@@ -107,7 +107,7 @@ button {
   float: left;
   width: 500;
   height: 700px;
-  padding-left: 250px;
+  padding-left: 320px;
 }
 
 .row:after {
@@ -117,8 +117,8 @@ button {
 }
 
 .coverArt {
-  width: calc(1080px / 3);
-  height: calc(1920px / 3);
+  width: calc(1080px / 4);
+  height: calc(1920px / 4);
 }
 
 .linkColor {
