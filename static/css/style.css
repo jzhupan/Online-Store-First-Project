@@ -108,6 +108,7 @@ button {
   width: 500;
   height: 700px;
   padding-left: 320px;
+  padding-top: 50px;
 }
 
 .row:after {
@@ -119,6 +120,13 @@ button {
 .coverArt {
   width: calc(1080px / 4);
   height: calc(1920px / 4);
+}
+
+.coverArt:hover {
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 2px solid rgb(255, 145, 163);
 }
 
 .linkColor {
