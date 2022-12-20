@@ -58,10 +58,3 @@ function changeQuantity(sourceElement) {
     valueDiv.innerHTML = quantity;
   }
 }
-
-// function AlertIt() {
-//   const answer = confirm("You will be leaving Github, click Ok to continue.");
-//   if (answer)
-//     window.location =
-//       "https://www.webtoons.com/en/challenge/sweet-nightmare-call-to-action/list?title_no=795204";
-// }
