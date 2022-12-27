@@ -42,8 +42,21 @@ h2 {
 }
 
 p {
-  font-family: cursive;
+  font-weight: lighter;
+  font-family: "Crushed", cursive;
 }
+
+.label{
+  font-weight: lighter;
+  font-family: "Crushed", cursive;
+}
+
+.submitButton{
+  font-weight: lighter;
+  font-family: "Crushed", cursive;
+  padding: 5px;
+}
+
 .topnav {
   padding: 10px 0px 10px 0px;
   text-align: center;

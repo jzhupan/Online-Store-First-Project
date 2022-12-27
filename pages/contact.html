@@ -88,9 +88,10 @@
       <br />
       a message below!
     </p>
+    <br>
     <div class="container centered">
       <form action="#">
-        <label class="label" for="firstName">Name*</label>
+        <label class="label" for="firstName">Name:</label>
         <input
           type="text"
           id="firstName"
@@ -108,7 +109,7 @@
         />
         <br />
         <br />
-        <label for="subject">Message Board:</label>
+        <label class="label" for="subject">Message Board:</label>
         <br />
         <textarea
           name="subject"
@@ -118,7 +119,7 @@
           placeholder="Type your message here..."
         ></textarea>
         <br />
-        <button onclick="triggerAlert()">Submit</button>
+        <button class="submitButton" onclick="triggerAlert()">Submit</button>
       </form>
     </div>
   </div>
