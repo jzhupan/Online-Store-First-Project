@@ -58,3 +58,7 @@ function changeQuantity(sourceElement) {
     valueDiv.innerHTML = quantity;
   }
 }
+
+function addToCartSum(){
+  document.getElementById("addToCart").innerText=document.getElementById("addToCartSum").innerText*1+Event.AT_TARGET.innerText*1;
+}

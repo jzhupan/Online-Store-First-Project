@@ -91,7 +91,8 @@ th {
 }
 
 .shoppingCart {
-  margin-right: 10px;
+  /* margin-right: 10px; */
+  padding-left: 0;
 }
 .gridContainer {
   position: relative;
@@ -215,4 +216,11 @@ button {
 }
 .dropDownAction:hover .dropDownButton a {
   background-color: azure;
+}
+
+.shopItemSum {
+  border: 1px solid rgba(133, 50, 166, 0.723);
+  margin-left: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
