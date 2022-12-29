@@ -60,7 +60,7 @@
             >
           </th>
           <th>
-            <p class="shopItemSum"><span id="sum">0</span></p>
+            <p class="shopItemBox"><span id="shopItemCount">0</span></p>
           </th>
           <th>
             <a class="shoppingCart topnav-component" href="./shoppingCart.html">
@@ -84,12 +84,12 @@
           </div>
           <div class="printName centered">Lime Popsickle</div>
           <div class="printPrice centered">$8.00 USD</div>
-          <div class="quantity" id="quantityPrint1">
+          <div class="quantity">
             <button class="minusButton" onclick="changeQuantity(this)">-</button>
-            <div class="value centered">1</div>
+            <div id="quantityPrint1" class="value centered">1</div>
             <button class="addButton" onclick="changeQuantity(this)">+</button>
           </div>
-          <button onclick="addToCart()">Add to Cart</button>
+          <button onclick="addToCart(document.getElementById('quantityPrint1'))">Add to Cart</button>
         </div>
         <div>
           <div class="gridBox">
@@ -101,12 +101,12 @@
           </div>
           <div class="printName centered">Pizza Delivery</div>
           <div class="printPrice centered">$10.00 USD</div>
-          <div class="quantity" id="quantityPrint1">
+          <div class="quantity">
             <button class="minusButton" onclick="changeQuantity(this)">-</button>
-            <div class="value centered">1</div>
+            <div id="quantityPrint2" class="value centered">1</div>
             <button class="addButton" onclick="changeQuantity(this)">+</button>
           </div>
-          <button onclick="addToCart()">Add to Cart</button>
+          <button onclick="addToCart(document.getElementById('quantityPrint2'))">Add to Cart</button>
         </div>
         <div>
           <div class="gridBox">
@@ -114,12 +114,12 @@
           </div>
           <div class="printName centered">Ai</div>
           <div class="printPrice centered">$5.00 USD</div>
-          <div class="quantity" id="quantityPrint1">
+          <div class="quantity">
             <button class="minusButton" onclick="changeQuantity(this)">-</button>
-            <div class="value centered">1</div>
+            <div id="quantityPrint3" class="value centered">1</div>
             <button class="addButton" onclick="changeQuantity(this)">+</button>
           </div>
-          <button onclick="addToCart()">Add to Cart</button>
+          <button onclick="addToCart(document.getElementById('quantityPrint3'))">Add to Cart</button>
         </div>
         <div>
           <div class="gridBox">
@@ -131,12 +131,12 @@
           </div>
           <div class="printName centered">Love Puzzle Cover</div>
           <div class="printPrice centered">$15.00 USD</div>
-          <div class="quantity" id="quantityPrint1">
+          <div class="quantity">
             <button class="minusButton" onclick="changeQuantity(this)">-</button>
-            <div class="value centered">1</div>
+            <div id="quantityPrint4" class="value centered">1</div>
             <button class="addButton" onclick="changeQuantity(this)">+</button>
           </div>
-          <button onclick="addToCart()">Add to Cart</button>
+          <button onclick="addToCart(document.getElementById('quantityPrint4'))">Add to Cart</button>
         </div>
         <div>
           <div class="gridBox">
@@ -144,12 +144,12 @@
           </div>
           <div class="printName centered">Bakugo</div>
           <div class="printPrice centered">$10.00 USD</div>
-          <div class="quantity" id="quantityPrint1">
+          <div class="quantity">
             <button class="minusButton" onclick="changeQuantity(this)">-</button>
-            <div class="value centered">1</div>
+            <div id="quantityPrint5" class="value centered">1</div>
             <button class="addButton" onclick="changeQuantity(this)">+</button>
           </div>
-          <button onclick="addToCart()">Add to Cart</button>
+          <button onclick="addToCart(document.getElementById('quantityPrint5'))">Add to Cart</button>
         </div>
         <div>
           <div class="gridBox">
@@ -161,12 +161,12 @@
           </div>
           <div class="printName centered">Makima</div>
           <div class="printPrice centered">$15.00 USD</div>
-          <div class="quantity" id="quantityPrint1">
+          <div class="quantity">
             <button class="minusButton" onclick="changeQuantity(this)">-</button>
-            <div class="value centered">1</div>
+            <div id="quantityPrint6" class="value centered">1</div>
             <button class="addButton" onclick="changeQuantity(this)">+</button>
           </div>
-          <button onclick="addToCart()">Add to Cart</button>
+          <button onclick="addToCart(document.getElementById('quantityPrint6'))">Add to Cart</button>
         </div>
         <div>
           <div class="gridBox">
@@ -178,12 +178,12 @@
           </div>
           <div class="printName centered">Bloody Makima</div>
           <div class="printPrice centered">$15.00 USD</div>
-          <div class="quantity" id="quantityPrint1">
+          <div class="quantity">
             <button class="minusButton" onclick="changeQuantity(this)">-</button>
-            <div class="value centered">1</div>
+            <div id="quantityPrint7" class="value centered">1</div>
             <button class="addButton" onclick="changeQuantity(this)">+</button>
           </div>
-          <button onclick="addToCart()">Add to Cart</button>
+          <button onclick="addToCart(document.getElementById('quantityPrint7'))">Add to Cart</button>
         </div>
         <div>
           <div class="gridBox">
@@ -191,12 +191,12 @@
           </div>
           <div class="printName centered">Power</div>
           <div class="printPrice centered">$15.00 USD</div>
-          <div class="quantity" id="quantityPrint1">
+          <div class="quantity">
             <button class="minusButton" onclick="changeQuantity(this)">-</button>
-            <div class="value centered">1</div>
+            <div id="quantityPrint8" class="value centered">1</div>
             <button class="addButton" onclick="changeQuantity(this)">+</button>
           </div>
-          <button onclick="addToCart()">Add to Cart</button>
+          <button onclick="addToCart(document.getElementById('quantityPrint8'))">Add to Cart</button>
         </div>
         <div>
           <div class="gridBox">
@@ -208,12 +208,12 @@
           </div>
           <div class="printName centered">Aria - Sweet Nightmare</div>
           <div class="printPrice centered">$10.00 USD</div>
-          <div class="quantity" id="quantityPrint1">
+          <div class="quantity">
             <button class="minusButton" onclick="changeQuantity(this)">-</button>
-            <div class="value centered">1</div>
+            <div id="quantityPrint9" class="value centered">1</div>
             <button class="addButton" onclick="changeQuantity(this)">+</button>
           </div>
-          <button onclick="addToCart()">Add to Cart</button>
+          <button onclick="addToCart(document.getElementById('quantityPrint9'))">Add to Cart</button>
         </div>
         <div>
           <div class="gridBox">
@@ -221,12 +221,12 @@
           </div>
           <div class="printName centered">Rebecca</div>
           <div class="printPrice centered">$18.00 USD</div>
-          <div class="quantity" id="quantityPrint1">
+          <div class="quantity">
             <button class="minusButton" onclick="changeQuantity(this)">-</button>
-            <div class="value centered">1</div>
+            <div id="quantityPrint10" class="value centered">1</div>
             <button class="addButton" onclick="changeQuantity(this)">+</button>
           </div>
-          <button onclick="addToCart()">Add to Cart</button>
+          <button onclick="addToCart(document.getElementById('quantityPrint10'))">Add to Cart</button>
         </div>
         <div>
           <div class="gridBox">
@@ -234,12 +234,12 @@
           </div>
           <div class="printName centered">Lime Popsickle</div>
           <div class="printPrice centered">$8.00 USD</div>
-          <div class="quantity" id="quantityPrint1">
+          <div class="quantity">
             <button class="minusButton" onclick="changeQuantity(this)">-</button>
-            <div class="value centered">1</div>
+            <div id="quantityPrint11" class="value centered">1</div>
             <button class="addButton" onclick="changeQuantity(this)">+</button>
           </div>
-          <button onclick="addToCart()">Add to Cart</button>
+          <button onclick="addToCart(document.getElementById('quantityPrint11'))">Add to Cart</button>
         </div>
         <div>
           <div class="gridBox">
@@ -251,12 +251,12 @@
           </div>
           <div class="printName centered">Doll me up</div>
           <div class="printPrice centered">$15.00 USD</div>
-          <div class="quantity" id="quantityPrint1">
+          <div class="quantity">
             <button class="minusButton" onclick="changeQuantity(this)">-</button>
-            <div class="value centered">1</div>
+            <div id="quantityPrint12" class="value centered">1</div>
             <button class="addButton" onclick="changeQuantity(this)">+</button>
           </div>
-          <button onclick="addToCart()">Add to Cart</button>
+          <button onclick="addToCart(document.getElementById('quantityPrint12'))">Add to Cart</button>
         </div>
       </div>
     </div>

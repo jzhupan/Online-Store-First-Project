@@ -59,6 +59,10 @@ function changeQuantity(sourceElement) {
   }
 }
 
-function addToCartSum(){
-  document.getElementById("addToCart").innerText=document.getElementById("addToCartSum").innerText*1+Event.AT_TARGET.innerText*1;
+function addToCart(quantityElement){
+  // console.log(quantityElement.innerHTML);
+  let quantityElementInt = parseInt(quantityElement.innerHTML);
+  let quantityCartElementInt = parseInt(document.getElementById("shopItemCount").innerHTML);
+  document.getElementById("shopItemCount").innerHTML = quantityElementInt + quantityCartElementInt;
+
 }
