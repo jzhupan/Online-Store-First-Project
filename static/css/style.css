@@ -101,7 +101,13 @@ th {
   display: grid;
   grid-template-columns: 230px 230px 230px 230px;
   grid-template-rows: 300px 300px 300px 300px;
-  gap: 100px;
+  gap: 50px;
+  padding-left: 60px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+
 }
 
 /* .gridBox {
@@ -112,10 +118,11 @@ th {
 } */
 
 .artPrint {
-  width: 250px;
-  height: 300px;
+  width: 150px;
+  height: 200px;
   object-fit: cover;
   padding-top: 20px;
+  margin-left: 40px;
 }
 
 button {

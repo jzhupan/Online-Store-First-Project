@@ -64,5 +64,4 @@ function addToCart(quantityElement){
   let quantityElementInt = parseInt(quantityElement.innerHTML);
   let quantityCartElementInt = parseInt(document.getElementById("shopItemCount").innerHTML);
   document.getElementById("shopItemCount").innerHTML = quantityElementInt + quantityCartElementInt;
-
 }
