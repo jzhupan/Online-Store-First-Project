@@ -149,8 +149,8 @@ button {
 .coverArt {
   width: calc(1080px / 4);
   height: calc(1920px / 4);
-  position: flex;
-  margin-right: 50px;
+  margin-left: 145px;
+  display: inline-block
 }
 
 .coverArt:hover {
