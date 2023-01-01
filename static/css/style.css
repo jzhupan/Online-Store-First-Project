@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("/images/Lake\ revised.png");
+  background-image: url("/images/Lake\ revised.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 70%;
@@ -54,14 +54,25 @@ p {
 .submitButton{
   font-weight: lighter;
   font-family: "Crushed", cursive;
-  padding: 5px;
+  padding: 15px;
+  flex: 1 1 auto;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #fface7 0%, #8eb6fb 51%, #fd91df 100%);
+  border: none;
+}
+.submitButton:hover{
+  background-position: right center;
 }
 
 .topnav {
   padding: 10px 0px 10px 0px;
   text-align: center;
   font-size: 24px;
-  color: rgb(237, 65, 131);
+  color: rgb(255, 255, 255);
 }
 
 .topnav-component {
@@ -78,8 +89,9 @@ table {
   margin-left: auto;
   margin-right: auto;
   padding-right: 10px;
-  border: 1px solid black;
-  background-color: rgb(255, 246, 234);
+  /* border: 1px solid black; */
+  background-image: linear-gradient(to right, #fface7 0%, #8eb6fb 51%, #fd91df 100%);
+  border-radius: 20px;
 }
 
 th {
@@ -110,13 +122,6 @@ th {
 
 }
 
-/* .gridBox {
-  text-align: center;
-  font-size: 24px;
-  margin: 2%;
-  width: 230px;
-} */
-
 .artPrint {
   width: 150px;
   height: 200px;
@@ -126,6 +131,7 @@ th {
 }
 
 button {
+  margin-top: 10px;
   margin: 0 auto;
   display: block;
 }
@@ -143,7 +149,6 @@ button {
   height: 500px;
   padding-top: 15px;
   padding-left: 20%;
-  /* display: inline-block; */
 }
 
 .coverArt {

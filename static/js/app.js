@@ -30,17 +30,6 @@ function blurFunction(inputText) {
   }
 }
 
-// inputText.style.background = "rgba(255,0,0.9,0.5)";
-
-// function addToCart() {
-//   document.getElementById("cartDemo").innerHTML = function () {
-//     addToCart();
-//   };
-//   function addToCart() {
-//     document.getElementById("cartDemo").innerHTML = "Added item to cart.";
-//   }
-// }
-
 function changeQuantity(sourceElement) {
   let parentElement = sourceElement.parentElement; //declaring parentElement variable to get parent element.
   let valueDiv = parentElement.querySelector(".value"); //declaring valueDiv = telling computer
@@ -60,7 +49,6 @@ function changeQuantity(sourceElement) {
 }
 
 function addToCart(quantityElement){
-  // console.log(quantityElement.innerHTML);
   let quantityElementInt = parseInt(quantityElement.innerHTML);
   let quantityCartElementInt = parseInt(document.getElementById("shopItemCount").innerHTML);
   document.getElementById("shopItemCount").innerHTML = quantityElementInt + quantityCartElementInt;
