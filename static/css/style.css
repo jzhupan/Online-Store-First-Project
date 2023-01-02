@@ -106,10 +106,10 @@ th {
   /* margin-right: 10px; */
   padding-left: 0;
 }
-.gridContainer {
-  position: relative;
-  width: 50%;
-  height: 1250px;
+
+/* .gridContainer {
+  position: absolute;
+  height: 100vh;
   display: grid;
   grid-template-columns: 230px 230px 230px 230px;
   grid-template-rows: 300px 300px 300px 300px;
@@ -119,7 +119,24 @@ th {
   padding-bottom: 100px;
   margin-top: 20px;
   margin-bottom: 50px;
+} */
 
+.gridBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridContainer {
+  position: absolute;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 230px;
+  grid-gap: 100px;
+  float: left;
+  margin: 30px;
+  margin-left: 5%;
 }
 
 .artPrint {
