@@ -8,9 +8,10 @@
 
 body {
   background-image: url("/images/Lake\ revised.webp");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   background-position-x: 70%;
+  flex-wrap: wrap;
 }
 
 .icon {
@@ -107,21 +108,14 @@ th {
   padding-left: 0;
 }
 
-/* .gridContainer {
-  position: absolute;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 230px 230px 230px 230px;
-  grid-template-rows: 300px 300px 300px 300px;
-  gap: 50px;
-  padding-left: 60px;
-  padding-top: 20px;
-  padding-bottom: 100px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-} */
-
-.gridBox{
+.gridContainer{
+  display: flex;
+  align-items: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 30px;
+}
+/* .gridBox{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,14 +131,15 @@ th {
   float: left;
   margin: 30px;
   margin-left: 5%;
-}
+} */
 
 .artPrint {
   width: 150px;
   height: 200px;
   object-fit: cover;
   padding-top: 20px;
-  margin-left: 40px;
+  margin: 30px;
+
 }
 
 button {
@@ -192,14 +187,17 @@ button {
 }
 .floatingBoxTwo {
   width: 90%;
-  height: 1300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   color: white;
   margin: 0 auto;
   border-radius: 20px;
-  padding-left: 60px;
-  padding-top: 20px;
-  padding-bottom: 100px;
-  margin-left: 80px;
+  /* padding-left: 60px; */
+  /* padding-top: 20px; */
+  padding-bottom: 50px;
+  /* margin-left: 20px; */
   margin-top: 20px;
   margin-bottom: 50px;
   background-color: rgba(133, 50, 166, 0.723);
