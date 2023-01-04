@@ -37,6 +37,7 @@ h2 {
 
 .centered {
   text-align: center;
+
 }
 .clickToReadText {
   align-items: center;
@@ -110,9 +111,8 @@ th {
 
 .gridContainer{
   display: flex;
-  align-items: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
   margin-left: 30px;
 }
 /* .gridBox{
@@ -163,13 +163,29 @@ button {
   padding-left: 20%;
 }
 
-.coverArt {
-  width: calc(1080px / 4);
-  height: calc(1920px / 4);
-  margin-left: 145px;
-  display: inline-block
+.webtoonContainer{
+  display: flex;
+  flex-wrap: wrap;
 }
 
+
+.coverBox1{
+  flex: 1;
+  margin-bottom: 30px;
+  order: 2;
+
+}
+
+.coverBox2{
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.coverArt {
+  width: calc(1080px / 3);
+  height: calc(1920px / 3);
+
+}
 .coverArt:hover {
   padding: 10px;
   padding-left: 5px;
@@ -179,10 +195,14 @@ button {
 
 .floatingBox {
   background: rgba(133, 50, 166, 0.723);
-  width: 950px;
-  height: 600px;
+  width:90%;
+  height: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
   color: white;
   margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
   border-radius: 20px;
 }
 .floatingBoxTwo {
@@ -203,14 +223,23 @@ button {
   background-color: rgba(133, 50, 166, 0.723);
   border-radius: 20px;
 }
+.container{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .floatingBoxThree {
   background: rgba(133, 50, 166, 0.723);
-  width: 800px;
-  height: 600px;
+  width: 90%;
+  height: 100%;
+  /* display: flex; */
+  /* justify-content: center; */
+  flex-wrap: wrap;
   padding-left: 10px;
   padding-top: 50px;
+  padding-bottom: 100px;
   color: white;
-  margin: 0 auto;
+  margin: 20px auto 50px auto;
   border-radius: 20px;
 }
 
@@ -251,3 +280,4 @@ button {
   padding-left: 15px;
   padding-right: 15px;
 }
+
